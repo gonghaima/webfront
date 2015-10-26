@@ -1,0 +1,17 @@
+﻿<a href="/">Back</a>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Title</td>
+            <td>Thumbnail</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="photo in photos">
+            <td>{{photo.title}}</td>
+            <td>
+                <a href="/Photos/Details/{{photo.id}}"><img src="{{photo.thumbnailUrl}}"></a>
+            </td>
+        </tr>
+    </tbody>
+</table>

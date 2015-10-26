@@ -1,0 +1,22 @@
+﻿<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <!--<td>User Id</td>
+                <td>Id</td>-->
+                <td>Title</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="album in albums">
+                <!--<td>{{album.userId}}</td>
+                <td>{{album.id}}</td>
+                <td></td>-->
+                <td>
+                    <a href="Photos/{{album.id}}">{{album.title}}</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
